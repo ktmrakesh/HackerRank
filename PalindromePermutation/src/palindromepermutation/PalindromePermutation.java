@@ -46,7 +46,7 @@ public class PalindromePermutation {
             }
         }
 
-        if(flag && count == 1){
+        if(flag && count <= 1){
             System.out.println("true");
         }
         else{
