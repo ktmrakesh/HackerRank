@@ -37,16 +37,17 @@ public class PalindromePermutation {
                 }
                 else{
                     if(charArr[i] % 2 == 1){
-                        flag =true; 
                         count++;
+                        if(count <=1)
+                            flag =true;
+                        else
+                            flag = false;
                     }
-                    else 
-                        flag = false;
                 }
             }
         }
 
-        if(flag && count <= 1){
+        if(flag){
             System.out.println("true");
         }
         else{
