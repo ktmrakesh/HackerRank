@@ -38,7 +38,7 @@ public class PalindromePermutation {
                 else{
                     if(charArr[i] % 2 == 1){
                         count++;
-                        if(count <=1)
+                        if(count ==1)
                             flag =true;
                         else
                             flag = false;
