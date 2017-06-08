@@ -5,6 +5,8 @@
  */
 package palindromepermutation;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Rakesh
@@ -16,7 +18,9 @@ public class PalindromePermutation {
      */
     public static void main(String[] args) {
 
-        String str = "taco cat";
+        Scanner sc = new Scanner(System.in);
+        
+        String str = sc.nextLine();//"taco cat";
         int count = 0;
         boolean flag =false;
         int[] charArr = new int[128]; //use Hashmap to reduce the space complexity
@@ -32,7 +36,7 @@ public class PalindromePermutation {
                         flag = true;
                 }
                 else{
-                    if(((charArr[i])-1) % 2 ==0){
+                    if(charArr[i] % 2 == 1){
                         flag =true; 
                         count++;
                     }
