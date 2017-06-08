@@ -40,9 +40,6 @@ public class PalindromePermutation {
                         flag =true; 
                         count++;
                     }
-                    else if(charArr[i] == 1){
-                        count++;   
-                    }
                     else 
                         flag = false;
                 }
